@@ -2,4 +2,18 @@
     <string name="app_name">Tremolo</string>
     <string name="name">I Wayan Yogi Widiantara Putra</string>
     <string name="email">yogiwidiantara10@gmail.com</string>
+    <string name="band_name">Nama Band</string>
+    <string name="display_personnel">Personil</string>
+    <string name="display_genre">Genre</string>
+    <string name="data_genre_band">Genre Band</string>
+    <string name="detail_year_active">Tahun Aktif</string>
+    <string name="data_year_active">Detail Tahun Aktif</string>
+    <string name="detail_label">Label</string>
+    <string name="data_label">Detail Label</string>
+    <string name="data_detail_band">Detail</string>
+    <string name="display_band_name">Nama Band</string>
+    <string name="detail_band">Detail</string>
+    <string name="detail">detail</string>
+    <string name="personnel_name">Nama Personil</string>
+    <string name="about">About</string>
 </resources>

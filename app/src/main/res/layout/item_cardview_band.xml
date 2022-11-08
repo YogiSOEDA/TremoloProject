@@ -37,7 +37,7 @@
             android:layout_toRightOf="@id/img_item_photo"
             android:textSize="16sp"
             android:textStyle="bold"
-            android:text="Nama Band" />
+            android:text="@string/display_band_name" />
 
         <TextView
             android:id="@+id/tv_item_detail"
@@ -51,7 +51,7 @@
             android:layout_toRightOf="@id/img_item_photo"
             android:ellipsize="end"
             android:maxLines="5"
-            android:text="Detail" />
+            android:text="@string/detail_band" />
 
         <Button
             android:id="@+id/btn_detail"
@@ -62,7 +62,7 @@
             android:layout_alignParentBottom="true"
             android:layout_marginStart="100dp"
             android:layout_toEndOf="@id/img_item_photo"
-            android:text="detail"
+            android:text="@string/detail"
             android:textSize="12sp" />
 
     </RelativeLayout>

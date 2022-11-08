@@ -40,7 +40,9 @@ class MainActivity : AppCompatActivity() {
                 moveToDetail.putExtra(DetailActivity.EXTRA_GENRE, data.genre)
                 moveToDetail.putExtra(DetailActivity.EXTRA_LABEL, data.label)
                 moveToDetail.putExtra(DetailActivity.EXTRA_YEAR_ACTIVE, data.yearActive)
+                moveToDetail.putExtra(DetailActivity.EXTRA_INDEX_BAND, data.indexBand)
                 startActivity(moveToDetail)
+
             }
         })
     }

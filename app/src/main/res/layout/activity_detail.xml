@@ -29,7 +29,7 @@
             android:layout_marginBottom="8dp"
             android:textSize="32sp"
             android:textStyle="bold"
-            android:text="Nama Band" />
+            android:text="@string/band_name" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -39,7 +39,7 @@
             android:layout_marginTop="16dp"
             android:layout_marginBottom="8dp"
             android:textSize="20sp"
-            android:text="Personil"
+            android:text="@string/display_personnel"
             android:textStyle="bold"/>
 
         <androidx.recyclerview.widget.RecyclerView
@@ -64,7 +64,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginRight="16dp"
                     android:textSize="16sp"
-                    android:text="Genre"/>
+                    android:text="@string/display_genre"/>
 
                 <TextView
                     android:id="@+id/tv_detail_genre"
@@ -72,7 +72,7 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:textSize="16sp"
-                    android:text="Genre Band" />
+                    android:text="@string/data_genre_band" />
 
             </TableRow>
 
@@ -86,7 +86,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginRight="16dp"
                     android:textSize="16sp"
-                    android:text="Tahun Aktif" />
+                    android:text="@string/detail_year_active" />
 
                 <TextView
                     android:id="@+id/tv_detail_year_active"
@@ -94,7 +94,7 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:textSize="16sp"
-                    android:text="Detail Tahun Aktif" />
+                    android:text="@string/data_year_active" />
 
             </TableRow>
 
@@ -108,7 +108,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginRight="16dp"
                     android:textSize="16sp"
-                    android:text="Label" />
+                    android:text="@string/detail_label" />
 
                 <TextView
                     android:id="@+id/tv_detail_label"
@@ -116,7 +116,7 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:textSize="16sp"
-                    android:text="Detail Label" />
+                    android:text="@string/data_label" />
             </TableRow>
         </TableLayout>
 
@@ -129,6 +129,6 @@
             android:layout_marginBottom="16dp"
             android:lineSpacingMultiplier="1"
             android:textSize="16sp"
-            android:text="Detail" />
+            android:text="@string/data_detail_band" />
     </LinearLayout>
 </ScrollView>

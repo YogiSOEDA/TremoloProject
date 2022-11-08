@@ -6,5 +6,6 @@ data class Band(
     var photo: Int = 0,
     var genre: String = "",
     var label: String = "",
-    var yearActive: String = ""
+    var yearActive: String = "",
+    var indexBand: Int = 0
 )
