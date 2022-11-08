@@ -36,6 +36,8 @@ class DetailActivity : AppCompatActivity() {
         val label = intent.getStringExtra(EXTRA_LABEL)
         val yearActive = intent.getStringExtra(EXTRA_YEAR_ACTIVE)
 
+        setActionBarTitle(name.toString())
+
         tvDetailNama.text = name
         tvDetailGenre.text = genre
         tvDetailYearActive.text = yearActive
@@ -45,5 +47,9 @@ class DetailActivity : AppCompatActivity() {
         Glide.with(this)
             .load(img)
             .into(imgDetail)
+    }
+
+    private fun setActionBarTitle(title: String) {
+        supportActionBar?.title = title
     }
 }
