@@ -1,5 +1,6 @@
 package com.example.tremolo
 
+import android.content.Intent
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -11,6 +12,17 @@ import com.bumptech.glide.Glide
 import com.bumptech.glide.request.RequestOptions
 
 class CardViewBandAdapter(private val listBand: ArrayList<Band>) : RecyclerView.Adapter<CardViewBandAdapter.CardViewHolder>() {
+
+    private lateinit var onItemClickCallback: OnItemClickCallback
+
+    fun setOnItemClickCallback(onItemClickCallback: OnItemClickCallback) {
+        this.onItemClickCallback = onItemClickCallback
+    }
+
+    interface OnItemClickCallback {
+        fun onItemClicked(data: Band)
+    }
+
     inner class CardViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
         var imgPhoto: ImageView = itemView.findViewById(R.id.img_item_photo)
         var tvName: TextView = itemView.findViewById(R.id.tv_item_name)
@@ -33,6 +45,10 @@ class CardViewBandAdapter(private val listBand: ArrayList<Band>) : RecyclerView.
 
         holder.tvName.text = band.name
         holder.tvDetail.text = band.detail
+
+        holder.btnDetail.setOnClickListener {
+            onItemClickCallback.onItemClicked(listBand[holder.adapterPosition])
+        }
     }
 
     override fun getItemCount(): Int {

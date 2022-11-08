@@ -56,6 +56,39 @@ object BandData {
             "Sheila on 7 adalah band pertama di Indonesia dengan 3 album pertama mereka terjual lebih dari 1 juta kopi di Indonesia dengan album kedua Kisah Klasik Untuk Masa Depan (2000) yang berada di peringkat #8 dan Sheila on 7 berada di peringkat #13 dalam Daftar album terlaris di Indonesia sepanjang masa. \"Kisah Klasik Untuk Masa Depan\" menduduki peringkat #1 di Hits Albums of the World dalam Billboard Malaysia. Sampai sekarang, Sheila on 7 diperkirakan telah menjual lebih dari 8 juta kopi album di Indonesia.",
     "Simple Plan adalah band bergenre Pop punk asal Montréal, Québec, Kanada. Sejak terbentuk mereka tidak pernah mengalami pergantian personel dan mereka adalah Pierre Bouvier, Jeff Stinco, Sébastien Lefebvre, Chuck Comeau, dan David Desrosiers. Sampai saat ini mereka telah merilis 5 album studio: No Pads, No Helmets...Just Balls (2002), Still Not Getting Any... (2004), Simple Plan (2008), Get Your Heart On! (2011), dan Boom (2015).")
 
+    private val bandGenre = arrayOf("Alternative Rock\nEmo\nPost-Hardcore",
+    "Pop Rock\nPop-Punk \nAlternative Rock\nSynth-Pop",
+    "Alternative Rock\nPost-Hardcore\nElectronicore",
+    "Punk Rock\nPop-Punk\nAlternative Rock\nCountry Rock",
+    "Alternative Rock\nPop-Punk\nSkate-Punk\nIndie Rock",
+    "Alternative Rock\nPop Rock\nRock Elektronik\nPost-Britpop\nPop Grunge",
+    "Pop\nPop Rock\nFunk Rock\nSoul",
+    "Pop Rock\nRock\nSoul Rock\nPiano Rock",
+    "Pop\nRock\nAlternative Rock\nPower Pop\nPop Rock",
+    "Pop Punk\nAlternative Rock")
+
+    private val bandLabels = arrayOf("A-Sketch\nWarner Bros.\nFueled by Ramen",
+    "Fueled by Ramen",
+    "Intact Records",
+    "Sony Music Entertainment Indonesia",
+    "Euforia",
+    "Musica Studio's",
+    "Interscope Records\nA&M\nOctone\nUniversal Music Group",
+    "Mosley\nInterscope",
+    "Massive Music Entertainment",
+    "Lava\nAtlantic")
+
+    private val bandYearActive = arrayOf("2005-sekarang",
+    "2011-sekarang",
+    "2011-sekarang",
+    "1995-sekarang",
+    "2001-sekarang",
+    "2000-sekarang",
+    "1994-sekarang",
+    "2002-sekarang",
+    "1996-sekarang",
+    "1999-sekarang")
+
     val listData: ArrayList<Band>
         get() {
             val list = arrayListOf<Band>()
@@ -64,6 +97,9 @@ object BandData {
                 band.name = bandName[position]
                 band.detail = bandDetails[position]
                 band.photo = bandImages[position]
+                band.genre = bandGenre[position]
+                band.label = bandLabels[position]
+                band.yearActive = bandYearActive[position]
                 list.add(band)
             }
             return list

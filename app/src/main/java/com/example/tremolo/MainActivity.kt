@@ -1,5 +1,6 @@
 package com.example.tremolo
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.recyclerview.widget.LinearLayoutManager
@@ -26,5 +27,19 @@ class MainActivity : AppCompatActivity() {
         rvBand.layoutManager = LinearLayoutManager(this)
         val cardViewBandAdapter = CardViewBandAdapter(list)
         rvBand.adapter = cardViewBandAdapter
+
+        cardViewBandAdapter.setOnItemClickCallback(object :
+            CardViewBandAdapter.OnItemClickCallback {
+            override fun onItemClicked(data: Band) {
+                val moveToDetail = Intent(applicationContext, DetailActivity::class.java)
+                moveToDetail.putExtra(DetailActivity.EXTRA_NAME, data.name)
+                moveToDetail.putExtra(DetailActivity.EXTRA_DETAIL, data.detail)
+                moveToDetail.putExtra(DetailActivity.EXTRA_PHOTO, data.photo)
+                moveToDetail.putExtra(DetailActivity.EXTRA_GENRE, data.genre)
+                moveToDetail.putExtra(DetailActivity.EXTRA_LABEL, data.label)
+                moveToDetail.putExtra(DetailActivity.EXTRA_YEAR_ACTIVE, data.yearActive)
+                startActivity(moveToDetail)
+            }
+        })
     }
 }
