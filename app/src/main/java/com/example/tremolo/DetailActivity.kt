@@ -28,6 +28,8 @@ class DetailActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_detail)
 
+        supportActionBar?.setDisplayHomeAsUpEnabled(true)
+
         rvPersonnel = findViewById(R.id.rv_personnels)
         rvPersonnel.setHasFixedSize(true)
 

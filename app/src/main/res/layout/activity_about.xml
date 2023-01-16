@@ -7,6 +7,7 @@
     android:padding="16dp"
     android:orientation="vertical"
     android:gravity="center"
+    android:background="@color/cream"
     tools:context=".AboutActivity">
 
     <ImageView
@@ -22,6 +23,7 @@
         android:gravity="center"
         android:textSize="23sp"
         android:textStyle="bold"
+        android:textColor="@color/black"
         android:text="@string/name"/>
 
     <TextView
@@ -30,6 +32,7 @@
         android:layout_marginTop="16dp"
         android:textSize="18sp"
         android:gravity="center"
+        android:textColor="@color/black"
         android:text="@string/email"/>
 
 </LinearLayout>

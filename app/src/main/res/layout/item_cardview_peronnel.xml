@@ -5,10 +5,7 @@
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     android:layout_gravity="center"
-    android:layout_marginLeft="8dp"
-    android:layout_marginTop="4dp"
-    android:layout_marginRight="8dp"
-    android:layout_marginBottom="4dp"
+    android:layout_margin="4dp"
     card_view:cardCornerRadius="4dp">
 
     <LinearLayout
@@ -31,12 +28,12 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="12dp"
-            android:layout_marginLeft="12dp"
-            android:layout_marginRight="12dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
             android:layout_marginBottom="8dp"
             android:layout_gravity="center"
             android:text="@string/personnel_name"
-            android:textSize="12sp"
+            android:textSize="13sp"
             android:textStyle="bold" />
 
     </LinearLayout>

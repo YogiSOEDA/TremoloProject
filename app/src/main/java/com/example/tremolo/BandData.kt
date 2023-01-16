@@ -89,17 +89,6 @@ object BandData {
     "1996-sekarang",
     "1999-sekarang")
 
-    private val bandPersonnel = arrayOf(arrayOf("Takahiro Moriuchi","Toru Yamashita","Ryota Kohama","Tomoya Kanki"),
-    arrayOf("Chrissy Costanza","Dan Gow","Will Ferri"),
-    arrayOf("Hiro","Nob","Teru","Kid'z"),
-    arrayOf("Bobby Kool","Jerinx","Eka Rock"),
-    arrayOf("Erix Soekamti","Dory Soekamti","Tony Soekamti"),
-    arrayOf("Nazril Irham","Loekman Hakim","David Kurnia Albert"),
-    arrayOf("Adam Levine","James Valentine","Jesse Carmichael","Mickey Madden","Sam Farrar","Matt Flynn","PJ Morton"),
-    arrayOf("Ryan Tedder","Zach Filkins","Eddie Fisher","Brent Kutzle","Drew Brown"),
-    arrayOf("Duta","Eross","Adam"),
-    arrayOf("Pierre Bouvier","Sébastien Lefebvre","Chuck Comeau","Jeff Stinco"))
-
     val listData: ArrayList<Band>
         get() {
             val list = arrayListOf<Band>()
@@ -113,21 +102,6 @@ object BandData {
                 band.yearActive = bandYearActive[position]
                 band.indexBand = position
                 list.add(band)
-            }
-            return list
-        }
-
-    val listPersonnel: ArrayList<Personnel>
-        get() {
-            val list = arrayListOf<Personnel>()
-            for (position in bandPersonnel.indices) {
-                val personnel = Personnel()
-                var j = 0
-                while (j < (bandPersonnel[position]?.size as Int)) {
-                    personnel.name = bandPersonnel[position][j]
-                    list.add(personnel)
-                    j++
-                }
             }
             return list
         }
